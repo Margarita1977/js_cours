@@ -46,6 +46,7 @@ let service2 = prompt('Какой дополнительный тип услуг
 let servicePrice2 = +prompt('Сколько это будет стоить?', '1500');
 
 let fullPrice = screenPrice + servicePrice1 + servicePrice2;
+
 console.log(fullPrice);
 
 let servicePercentPrice = fullPrice - 5000.60;
@@ -74,8 +75,8 @@ const getAllServicePrices = function (servicePrice1,servicePrice2) {
 }
 let allServicePrices = getAllServicePrices(servicePrice1,servicePrice2);
 
-function getFullPrice(screenPrice,allServicePrices) {
-    console.log(screenPrice + allServicePrices);
+function getFullPrice(allServ) {
+    return screenPrice + allServ
 }
-let fullPrice = getFullPrice(screenPrice,allServicePrices)
+ fullPrice = getFullPrice(allServicePrices)
 
