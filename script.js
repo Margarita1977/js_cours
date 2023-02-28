@@ -55,8 +55,6 @@ if (fullPrice > 30000) {
     console.log('Даем скидку в 10%');
 } else if (fullPrice > 15000 &&  fullPrice < 30000 ) {
     console.log('Даем скидку в 5%');
-// } else if (fullPrice > 30000) {
-//     console.log('Даем скидку в 5%');
 } else if (fullPrice < 15000 && fullPrice > 0) {
     console.log('Скидка не предусмотрена');
 } else if (fullPrice < 0) {
@@ -64,3 +62,20 @@ if (fullPrice > 30000) {
 } else {
     console.log('к сожалению у вас уровень дохода ниже среднего');
 }
+
+
+ 
+
+                        // =================
+                        //     lesson4    //
+                        // =================
+const getAllServicePrices = function (servicePrice1,servicePrice2) {
+    console.log(servicePrice1 + servicePrice2); 
+}
+let allServicePrices = getAllServicePrices(servicePrice1,servicePrice2);
+
+function getFullPrice(screenPrice,allServicePrices) {
+    console.log(screenPrice + allServicePrices);
+}
+let fullPrice = getFullPrice(screenPrice,allServicePrices)
+
