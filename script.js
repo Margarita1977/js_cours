@@ -70,13 +70,62 @@ if (fullPrice > 30000) {
                         // =================
                         //     lesson4    //
                         // =================
-const getAllServicePrices = function (servicePrice1,servicePrice2) {
-    console.log(servicePrice1 + servicePrice2); 
-}
-let allServicePrices = getAllServicePrices(servicePrice1,servicePrice2);
+let allServicePrices 
 
-function getFullPrice(allServ) {
-    return screenPrice + allServ
+const getAllServicePrices = function () {
+    return servicePrice1 + servicePrice2
 }
- fullPrice = getFullPrice(allServicePrices)
+
+function getFullPrice() {
+    return screenPrice + allServicePrices
+}
+
+allServicePrices = getAllServicePrices()
+fullPrice = getFullPrice()
+
+console.log(allServicePrices);
+console.log(fullPrice + ' ебаный результат');
+
+
+
+
+
+// старый кусочек
+
+
+
+// let fullPrice = screenPrice + servicePrice1 + servicePrice2;
+
+// console.log(fullPrice);
+
+// let servicePercentPrice = fullPrice - 5000.60;
+// console.log(Math.ceil(servicePercentPrice));
+
+// if (fullPrice > 30000) {
+//     console.log('Даем скидку в 10%');
+// } else if (fullPrice > 15000 &&  fullPrice < 30000 ) {
+//     console.log('Даем скидку в 5%');
+// } else if (fullPrice < 15000 && fullPrice > 0) {
+//     console.log('Скидка не предусмотрена');
+// } else if (fullPrice < 0) {
+//     console.log('Что то пошло не так');
+// } else {
+//     console.log('к сожалению у вас уровень дохода ниже среднего');
+// }
+
+
+ 
+
+//                         // =================
+//                         //     lesson4    //
+//                         // =================
+// const getAllServicePrices = function (servicePrice1,servicePrice2) {
+//     console.log(servicePrice1 + servicePrice2); 
+// }
+// let allServicePrices = getAllServicePrices(servicePrice1,servicePrice2);
+
+// function getFullPrice(allServ) {
+//     return screenPrice + allServ
+// }
+//  fullPrice = getFullPrice(allServicePrices)
 
