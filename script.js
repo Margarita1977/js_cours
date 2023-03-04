@@ -21,9 +21,9 @@
 // console.log("Стоимость разработки сайта", fullPrice, "рублей/ долларов/гривен/юани");
 // console.log(fullPrice * (rollback/100));
 // 
-//
-//  
-
+// 
+// 
+// 
                         // =================
                         //     lesson3    //
                         // =================
@@ -37,8 +37,8 @@ console.log(screens);
 let screenPrice = +prompt('Сколько будет стоить данная работа?', "18888");
 console.log(screenPrice);
 
-let adaptive = prompt('Нужен ли адаптив на сайте?', "да/нет");
-console.log(adaptive == 'да')
+let adaptive = confirm('Нужен ли адаптив на сайте?');
+console.log(adaptive)
 
 let service1 = prompt('Какой дополнительный тип услуги нужен?', 'продукты');
 let servicePrice1 = +prompt('Сколько это будет стоить?', '20000');
@@ -69,13 +69,25 @@ if (fullPrice > 30000) {
                         // =================
                         //     lesson4    //
                         // =================
-const getAllServicePrices = function (servicePrice1,servicePrice2) {
-    console.log(servicePrice1 + servicePrice2); 
+let allServicePrices
+const getAllServicePrices = function () {
+    return servicePrice1 + servicePrice2; 
 }
-let allServicePrices = getAllServicePrices(servicePrice1,servicePrice2);
 
-function getFullPrice(screenPrice,allServicePrices) {
-    console.log(screenPrice + allServicePrices);
+function getFullPrice() {
+    return screenPrice + allServicePrices;
 }
-let fullPrice = getFullPrice(screenPrice,allServicePrices)
+allServicePrices = getAllServicePrices();
+fullPrice = getFullPrice()
+console.log(fullPrice);
+
+
+// title.replace(/^[a-z]/), 
+function getTitle() {
+    return  title.charAt(0).toUpperCase() + title.slice(1).toLowerCase();
+}
+title = getTitle();
+console.log(title);
+
+
 
